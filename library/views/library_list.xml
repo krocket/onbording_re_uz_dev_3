@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<odoo>
+  <!-- Library App View -->
+<record id="view_form_book" model="ir.ui.view">
+  <field name="name">Library Books</field>
+  <field name="model">library.book</field>
+  <field name="arch" type="xml">
+    <form string="Book">
+      <header></header>
+      <sheet>
+        <group>
+          <group name="informations">
+            <field name="name" />
+            <field name="isbn" />
+            <field name="active" />
+            <field name="name" />
+            <field name="name" />
+            <field name="name" />
+          </group>
+          <group name="date">
+            <field name="date_publisher" />
+          </group>
+          <separator string="Complémentaire">
+          <group>
+            <field name="image" />
+            <field name="publisher_id" />
+            <field name="author_ids" />
+          </group>
+        </group>
+      </sheet>
+    </form>
+  </field>
+</record>
+
+
+</odoo>
