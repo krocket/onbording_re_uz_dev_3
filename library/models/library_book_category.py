@@ -12,7 +12,7 @@ class BookCategory(models.Model):
     ondelete='restrict'
   )
 
-  childs_ids = fields.One2many(
+  child_ids = fields.One2many(
     comodel_name='library.book.category',
     inverse_name='parent_id',
     string='Subcategories'
