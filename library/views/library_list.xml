@@ -13,9 +13,6 @@
             <field name="name" />
             <field name="isbn" />
             <field name="active" />
-            <field name="name" />
-            <field name="name" />
-            <field name="name" />
           </group>
           <group name="date">
             <field name="date_publisher" />
