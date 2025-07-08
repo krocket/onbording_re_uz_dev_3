@@ -7,8 +7,9 @@
     'category': 'library',
     'depends': ['base'],
     'data': [
-        "views/library_menu.xml",
         "views/library_list.xml",
+        "views/library_category_view.xml",
+        "views/library_menu.xml",
     ],
     'license': 'LGPL-3',
     'installable': True,
