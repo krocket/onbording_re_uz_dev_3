@@ -10,6 +10,7 @@
         "views/library_view.xml",
         "views/library_category_view.xml",
         "views/library_menu.xml",
+        "data/category_demo.xml"
     ],
     'license': 'LGPL-3',
     'installable': True,

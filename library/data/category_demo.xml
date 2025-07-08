@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<odoo>
+  <!-- Catégories principales -->
+  <record id="category_fiction" model="library.book.category">
+      <field name="name">Fiction</field>
+  </record>
+  <record id="category_nonfiction" model="library.book.category">
+      <field name="name">Non-Fiction</field>
+  </record>
+  <record id="category_sci_fi" model="library.book.category">
+      <field name="name">Science Fiction</field>
+      <field name="parent_id" ref="category_fiction"/>
+  </record>
+  <record id="category_fantasy" model="library.book.category">
+      <field name="name">Fantasy</field>
+      <field name="parent_id" ref="category_fiction"/>
+  </record>
+  <record id="category_history" model="library.book.category">
+      <field name="name">History</field>
+      <field name="parent_id" ref="category_nonfiction"/>
+  </record>
+  <record id="category_biography" model="library.book.category">
+      <field name="name">Biography</field>
+      <field name="parent_id" ref="category_nonfiction"/>
+  </record>
+  <record id="category_sci_fi_dystopian" model="library.book.category">
+      <field name="name">Dystopian</field>
+      <field name="parent_id" ref="category_sci_fi"/>
+  </record>
+  <record id="category_sci_fi_space_opera" model="library.book.category">
+      <field name="name">Space Opera</field>
+      <field name="parent_id" ref="category_sci_fi"/>
+  </record>
+  <record id="category_fantasy_high" model="library.book.category">
+      <field name="name">High Fantasy</field>
+      <field name="parent_id" ref="category_fantasy"/>
+  </record>
+  <record id="category_fantasy_urban" model="library.book.category">
+      <field name="name">Urban Fantasy</field>
+      <field name="parent_id" ref="category_fantasy"/>
+  </record>
+</odoo>
