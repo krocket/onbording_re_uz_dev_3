@@ -20,7 +20,7 @@
           <group name="date">
             <field name="date_publisher" />
           </group>
-          <separator string="Complémentaire">
+          <separator string="Complémentaire" />
           <group>
             <field name="image" />
             <field name="publisher_id" />

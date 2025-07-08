@@ -1,6 +1,6 @@
 {
     'name': 'Une librairie',
-    'version': '18.0.1.1',
+    'version': '18.0.1.2',
     'summary': 'Un exemple de librairie',
     'description': "Une librairie",
     'author': 'Re-uz distribution',
