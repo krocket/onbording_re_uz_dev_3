@@ -24,6 +24,7 @@
               <field name="image" />
               <field name="publisher_id" />
               <field name="author_ids" />
+              <field name="category_ids" widget="many2many_tags" />
             </group>
           </group>
         </sheet>

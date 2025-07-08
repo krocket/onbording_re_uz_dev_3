@@ -10,3 +10,4 @@ class Book(models.Model):
   image = fields.Binary('Cover')
   publisher_id = fields.Many2one('res.partner', string='Publisher')
   author_ids = fields.Many2many('res.partner', string='Authors')
+  category_ids = fields.Many2many('library.book.category', string='Categories')
