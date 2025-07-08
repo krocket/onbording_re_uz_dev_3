@@ -10,7 +10,9 @@
         "views/library_view.xml",
         "views/library_category_view.xml",
         "views/library_menu.xml",
-        "data/category_demo.xml"
+        "data/category_demo.xml",
+        "data/library_security.xml",
+        "security/ir.model.access.csv"
     ],
     'license': 'LGPL-3',
     'installable': True,
