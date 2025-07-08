@@ -6,9 +6,7 @@
     'author': 'Re-uz distribution',
     'category': 'library',
     'depends': ['base'],
-    'data': [
-        'views/views.xml'
-    ],
+    'data': [],
     'installable': True,
     'application': False,
     'auto_install': False,
