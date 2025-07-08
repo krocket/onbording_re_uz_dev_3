@@ -6,12 +6,12 @@
     <record model="ir.actions.act_window" id="action_library_book">
       <field name="name">Library Books</field>
       <field name="res_model">library.book</field>
-      <field name="view_mode">list, form</field>
+      <field name="view_mode">list,form</field>
     </record>
 
   <menuitem id="menu_library_book"
             name="Book"
             action="library.action_library_book"
             parent="menu_library" />
-            
+
 </odoo>
