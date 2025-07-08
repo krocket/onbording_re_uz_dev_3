@@ -9,9 +9,20 @@
       <field name="view_mode">list,form</field>
     </record>
 
+     <record model="ir.actions.act_window" id="action_library_book_category">
+      <field name="name">Library Books Categories</field>
+      <field name="res_model">library.book.category</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
   <menuitem id="menu_library_book"
-            name="Book"
+            name="Books"
             action="library.action_library_book"
+            parent="menu_library" />
+
+  <menuitem id="menu_library_book_category"
+            name="Categories"
+            action="library.action_library_book_category"
             parent="menu_library" />
 
 </odoo>
