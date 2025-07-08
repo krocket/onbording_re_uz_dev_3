@@ -1,33 +1,48 @@
 <?xml version="1.0" ?>
 <odoo>
-  <!-- Library App View -->
-<record id="view_form_book" model="ir.ui.view">
-  <field name="name">Library Books</field>
-  <field name="model">library.book</field>
-  <field name="arch" type="xml">
-    <form string="Book">
-      <header></header>
-      <sheet>
-        <group>
-          <group name="informations">
-            <field name="name" />
-            <field name="isbn" />
-            <field name="active" />
-          </group>
-          <group name="date">
-            <field name="date_publisher" />
-          </group>
-          <separator string="Complémentaire" />
+  <!-- Library App View Form -->
+  <record id="view_form_book" model="ir.ui.view">
+    <field name="name">Library Books</field>
+    <field name="model">library.book</field>
+    <field name="arch" type="xml">
+      <form string="Book">
+        <header></header>
+        <sheet>
           <group>
-            <field name="image" />
-            <field name="publisher_id" />
-            <field name="author_ids" />
+            <separator string="Informations" />
+            <group>
+              <field name="name" />
+              <field name="isbn" />
+              <field name="active" />
+            </group>
+            <separator string="Date" />
+            <group name="date">
+              <field name="date_publisher" />
+            </group>
+            <separator string="Complémentaire" />
+            <group>
+              <field name="image" />
+              <field name="publisher_id" />
+              <field name="author_ids" />
+            </group>
           </group>
-        </group>
-      </sheet>
-    </form>
-  </field>
-</record>
+        </sheet>
+      </form>
+    </field>
+  </record>
 
+  <!-- Library App View List -->
+  <record id="view_tree_book" model="ir.ui.view">
+    <field name="name">Books List</field>
+    <field name="model">library.book</field>
+    <field name="arch" type="xml">
+      <list string="Book">
+        <field name="name" />
+        <field name="author_ids" widget="many2many_tags" />
+        <field name="date_publisher" optional="hide" />
+        <field name="publisher_id" />
+      </list>
+    </field>
+  </record>
 
 </odoo>
