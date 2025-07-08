@@ -45,4 +45,24 @@
     </field>
   </record>
 
+  <record id="view_search_book" model="ir.ui.view">
+    <field name="name">Books search</field>
+    <field name="model">library.book</field>
+    <field name="arch" type="xml">
+      <search>
+        <field name="name" />
+        <field name="publisher_id" />
+        <filter name="filter_active" 
+                string="Active"
+                domain="[('active','=',True)]" />
+        <filter name="filter_inactive" 
+                  string="inActive"
+                  domain="[('active','=',False)]" />
+        <group expand="1" string="Group">
+          <filter string="Publisher" name="group_by_publisher_id" context="{'group_by': 'publisher_id'}" />
+        </group>
+      </search>
+    </field>
+  </record>
+
 </odoo>
