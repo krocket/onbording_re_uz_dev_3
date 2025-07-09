@@ -6,9 +6,18 @@
     <field name="model">library.book</field>
     <field name="inherit_id" ref="library.view_form_book" />
     <field name="arch" type="xml">
-      <field name="isbn" position="after">
+      <!-- <field name="isbn" position="after">
         <field name="is_available" />
-      </field>
+      </field> -->
+
+      <xpath expr="//field[@name='isbn']" position="after">
+        <field name="is_available">
+      </xpath>
+
+      <!-- <xpath expr="//field[@name='isbn']" position="attributes">
+        <attribute name="string">Test</attributes>
+        <attribute name="required">1</attributes>
+      </xpath> -->
     </field>
   </record>
 
