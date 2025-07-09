@@ -26,7 +26,9 @@
           <field name="technology_product" />
         </group>
         <separator string="Produit infos" />
-        <field name="reference_product" />
+        <group>
+          <field name="reference_product" />
+        </group>
       </xpath>
 
     </field>

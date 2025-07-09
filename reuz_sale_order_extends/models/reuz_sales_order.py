@@ -9,11 +9,11 @@ class ReuzSalesOrder(models.Model):
 
   silver_reference = fields.Char(string='Silver reference')
   planned_date = fields.Date(string='Date de plannification')
-  format_product = fields.Char(string='Format produit')
-  volume_product = fields.Integer(string='Volume produit', default=0)
-  base_product = fields.Char(string='Base produit')
-  color_product = fields.Char(string='Color produit')
-  technology_product = fields.Char(string='Technology produit')
+  format_product = fields.Char(string='Format')
+  volume_product = fields.Integer(string='Volume', default=0)
+  base_product = fields.Char(string='Base')
+  color_product = fields.Char(string='Color')
+  technology_product = fields.Char(string='Technology')
 
   reference_product = fields.Char(
     string='Reference produit',
@@ -32,4 +32,4 @@ class ReuzSalesOrder(models.Model):
     'technology_product')
   def _compute_product_reference(self):
     for record in self:
-      return f"{record.format_product}{record.volume_product}{record.base_product}{record.color_product}{record.technology_product}"
+      record.reference_product = f"{record.format_product or ''}{record.volume_product or ''}{record.base_product or ''}{record.color_product or ''}{record.technology_product or ''}"
