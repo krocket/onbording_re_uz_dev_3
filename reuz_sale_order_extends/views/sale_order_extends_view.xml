@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<odoo>
+  <!-- Library App View Form sale order extend -->
+  <record id="view_form_book_extend" model="ir.ui.view">
+    <field name="name">Production infos</field>
+    <field name="model">sale.order</field>
+    <field name="inherit_id" ref="sale.view_order_form" />
+    <field name="arch" type="xml">
+
+      <xpath expr="//header" position="inside">
+        <button name="send_alerte_test" type="object" string="ALERT" />
+      </xpath>
+
+      <xpath expr="//field[@name='partner_id']" position="after">
+        <separator string="Production infos" />
+          <group>
+            <field name="silver_reference" />
+            <field name="planned_date" />
+          </group>
+      </xpath>
+
+    </field>
+  </record>
+
+  <!-- Library App View List extend -->
+  <!-- <record id="view_tree_book_extend" model="ir.ui.view">
+    <field name="name">Books List extends</field>
+    <field name="model">library.book</field>
+    <field name="inherit_id" ref="library.view_tree_book" />
+    <field name="arch" type="xml">
+      <field name="publisher_id" position="after">
+        <field name="is_available" />
+      </field>
+    </field>
+  </record> -->
+
+</odoo>

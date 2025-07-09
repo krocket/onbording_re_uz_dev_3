@@ -6,7 +6,9 @@
     'author': 'Re-uz distribution',
     'category': 'sales',
     'depends': ['sale_management'],
-    'data': [],
+    'data': [
+        "views/sale_order_extends_view.xml"
+    ],
     'license': 'LGPL-3',
     'installable': True,
     'application': False,
