@@ -5,7 +5,7 @@ import logging
 _logger = logging.getLogger(__name__)
 
 class ReuzSalesOrder(models.Model):
-  _inherit = 'sale.management'
+  _inherit = 'sale.order'
 
   silverReference = fields.Char(string='Silver reference', required=True)
   plannedDate = fields.Date(string='Date de plannification')
