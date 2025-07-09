@@ -5,7 +5,7 @@
     'description': "Surcharge du module vente",
     'author': 'Re-uz distribution',
     'category': 'sales',
-    'depends': ['sales'],
+    'depends': ['sale_management'],
     'data': [],
     'license': 'LGPL-3',
     'installable': True,
