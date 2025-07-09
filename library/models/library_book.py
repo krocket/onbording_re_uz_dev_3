@@ -35,3 +35,6 @@ class Book(models.Model):
         raise UserError(
           '%s is an invalid ISBN' % book.isbn)
       return True
+    
+  def button_your_are_best(self):
+    return UserError("T'es le meilleurs")
