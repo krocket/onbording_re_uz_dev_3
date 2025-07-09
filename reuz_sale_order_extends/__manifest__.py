@@ -4,7 +4,7 @@
     'summary': 'Un exemple de Surcharge du module de ventes',
     'description': "Surcharge du module vente",
     'author': 'Re-uz distribution',
-    'category': 'library',
+    'category': 'sales',
     'depends': ['sales'],
     'data': [],
     'license': 'LGPL-3',
