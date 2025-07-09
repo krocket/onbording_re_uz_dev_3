@@ -10,5 +10,5 @@ class ReuzSalesOrder(models.Model):
   silver_reference = fields.Char(string='Silver reference', required=True)
   planned_date = fields.Date(string='Date de plannification')
 
-  def send_alerte_test():
+  def send_alerte_test(self):
     raise UserError('T\'es le meilleur')
