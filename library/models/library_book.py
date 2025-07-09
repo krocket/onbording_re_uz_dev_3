@@ -1,4 +1,4 @@
-from odoo import fields, models
+from odoo import fields, models, api
 from odoo.exceptions import UserError
 from odoo.exceptions import ValidationError
 
@@ -36,5 +36,8 @@ class Book(models.Model):
           '%s is an invalid ISBN' % book.isbn)
       return True
     
-  def button_your_are_best(self):
-    raise UserError("T'es le meilleurs")
+  @api.constrins('isbn')
+  def _constrain_isbn_valid(self):
+    self.button_check_isbn()
+  
+

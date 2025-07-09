@@ -8,7 +8,6 @@
       <form string="Book">
         <header>
           <button name="button_check_isbn" type="object" string="Check ISBN" />
-          <button name="button_your_are_best" type="object" string="Yeah" />
         </header>
         <sheet>
           <group>
