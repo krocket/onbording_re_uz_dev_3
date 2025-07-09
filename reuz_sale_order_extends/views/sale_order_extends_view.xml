@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <odoo>
   <!-- Library App View Form sale order extend -->
-  <record id="view_form_book_extend" model="ir.ui.view">
+  <record id="view_form_sale_order_extend" model="ir.ui.view">
     <field name="name">Production infos</field>
     <field name="model">sale.order</field>
     <field name="inherit_id" ref="sale.view_order_form" />
