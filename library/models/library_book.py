@@ -37,4 +37,4 @@ class Book(models.Model):
       return True
     
   def button_your_are_best(self):
-    return UserError("T'es le meilleurs")
+    raise UserError("T'es le meilleurs")
