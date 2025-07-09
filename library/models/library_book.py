@@ -1,4 +1,4 @@
-from odoo import fields, models, UserError
+from odoo import fields, models
 from odoo.exceptions import UserError
 from odoo.exceptions import ValidationError
 
