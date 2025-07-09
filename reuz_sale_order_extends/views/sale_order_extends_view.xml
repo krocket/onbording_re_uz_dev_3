@@ -13,10 +13,20 @@
 
       <xpath expr="//field[@name='partner_id']" position="after">
         <separator string="Production infos" />
-          <group>
-            <field name="silver_reference" />
-            <field name="planned_date" />
-          </group>
+        <group>
+          <field name="silver_reference" />
+          <field name="planned_date" />
+        </group>
+        <separator string="Produit infos" />
+        <group>
+          <field name="format_product" />
+          <field name="volume_product" />
+          <field name="base_product" />
+          <field name="color_product" />
+          <field name="technology_product" />
+        </group>
+        <separator string="Produit infos" />
+        <field name="reference_product" />
       </xpath>
 
     </field>
