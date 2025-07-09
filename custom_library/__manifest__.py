@@ -6,7 +6,9 @@
     'author': 'Re-uz distribution',
     'category': 'library',
     'depends': ['library'],
-    'data': [],
+    'data': [
+        'views/custom_library_view.xml'
+    ],
     'license': 'LGPL-3',
     'installable': True,
     'application': False,
