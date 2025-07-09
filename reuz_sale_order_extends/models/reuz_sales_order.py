@@ -31,4 +31,5 @@ class ReuzSalesOrder(models.Model):
     'color_product', 
     'technology_product')
   def _compute_product_reference(self):
-    return f"{self.format_product}{self.volume_product}{self.base_product}{self.color_product}{self.technology_product}"
+    for record in self:
+      return f"{record.format_product}{record.volume_product}{record.base_product}{record.color_product}{record.technology_product}"
