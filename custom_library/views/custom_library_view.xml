@@ -11,7 +11,7 @@
       </field> -->
 
       <xpath expr="//field[@name='isbn']" position="after">
-        <field name="is_available">
+        <field name="is_available" />
       </xpath>
 
       <!-- <xpath expr="//field[@name='isbn']" position="attributes">
