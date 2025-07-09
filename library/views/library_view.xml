@@ -6,7 +6,10 @@
     <field name="model">library.book</field>
     <field name="arch" type="xml">
       <form string="Book">
-        <header></header>
+        <header>
+          <button name="button_check_isbn" type="object" string="Check ISBN" />
+          <button name="button_your_are_best" type="object" string="Yeah" />
+        </header>
         <sheet>
           <group>
             <separator string="Informations" />
