@@ -36,7 +36,7 @@ class Book(models.Model):
           '%s is an invalid ISBN' % book.isbn)
       return True
     
-  @api.constrins('isbn')
+  @api.constrains('isbn')
   def _constrain_isbn_valid(self):
     self.button_check_isbn()
   
