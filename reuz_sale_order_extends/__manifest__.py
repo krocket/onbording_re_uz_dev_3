@@ -7,7 +7,8 @@
     'category': 'sales',
     'depends': ['sale_management'],
     'data': [
-        "views/sale_order_extends_view.xml"
+        "views/sale_order_extends_view.xml",
+        "report/sale_order_extends_template.xml"
     ],
     'license': 'LGPL-3',
     'installable': True,

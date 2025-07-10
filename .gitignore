@@ -1,0 +1,102 @@
+# Fichiers de configuration locaux et secrets
+*.conf
+*.cfg
+*.ini
+*.env
+*.local
+*.secret
+*.key
+*.pem
+*.pfx
+*.p12
+*.jks
+
+# Environnements virtuels Python
+env/
+venv/
+odoo-venv/
+odoo_env/
+*.pyc
+__pycache__/
+*.egg-info/
+*.egg
+*.py[co]
+*.swp
+*.swo
+*.bak
+*.cache
+
+# Fichiers de base de données
+*.db
+*.sql
+*.dump
+*.bak
+*.backup
+
+# Fichiers temporaires et de log
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+
+# Fichiers de dépendances Python
+requirements.txt
+requirements-dev.txt
+Pipfile
+Pipfile.lock
+
+# Fichiers spécifiques à Odoo
+*.filestore
+*.sessions
+*.cache
+
+# Fichiers de développement
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Fichiers de build et de distribution
+dist/
+build/
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+
+# Fichiers générés par Odoo
+*.pot
+*.po
+*.mo
+
+# Fichiers de dépendances JavaScript
+node_modules/
+bower_components/
+jspm_packages/
+
+# Fichiers de dépendances npm
+package-lock.json
+yarn.lock
+
+# Fichiers de dépendances Composer (PHP)
+vendor/
+composer.lock
+
+# Fichiers de dépendances Ruby
+Gemfile.lock
+
+# Fichiers de dépendances Go
+Gopkg.lock
+
+# Fichiers de dépendances Rust
+Cargo.lock
+
+# Fichiers de dépendances Dart
+.pub/
+.pub-cache/
+
+# Fichiers de dépendances Flutter
+.pub-cache/
+build/
