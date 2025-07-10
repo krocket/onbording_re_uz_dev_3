@@ -10,6 +10,13 @@ class Book(models.Model):
   _description = 'Book'
   name = fields.Char(string='Title', required=True)
   isbn = fields.Char('ISBN')
+  state = fields.Selection([
+        ('draft', 'Draft'),
+        ('available', 'Available'),
+        ('borrowed', 'Borrowed'),
+        ('lost', 'Lost'),
+        ('archived', 'Archived'),
+    ], string='State', default='draft', required=True, help='State of the book')
   active = fields.Boolean(string='Active?', default=True)
   date_publisher = fields.Date()
   image = fields.Binary('Cover')
