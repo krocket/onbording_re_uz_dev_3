@@ -15,6 +15,7 @@
             <group>
               <field name="name" />
               <field name="isbn" />
+              <field name="state" />
               <field name="active" />
             </group>
             <separator string="Date" />
