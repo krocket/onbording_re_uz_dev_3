@@ -7,6 +7,7 @@
     <field name="arch" type="xml">
       <form string="Book">
         <header>
+          <field name="state" widget="statusbar" statusbar_visible="draft,available,borrowed,lost,archived"/>
           <button name="button_check_isbn" type="object" string="Check ISBN" />
         </header>
         <sheet>
@@ -15,8 +16,8 @@
             <group>
               <field name="name" />
               <field name="isbn" />
-              <field name="state" />
               <field name="active" />
+              <field name="state" />
             </group>
             <separator string="Date" />
             <group name="date">
